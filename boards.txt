@@ -70,10 +70,10 @@ rf210.build.code_debug=0
 rf210.upload.speed=115200
 rf210.upload.erase_cmd=-e
 
-rf210.menu.CDCOnBoot.default=Disabled
-rf210.menu.CDCOnBoot.default.build.cdc_on_boot=0
 rf210.menu.CDCOnBoot.cdc=Enabled
 rf210.menu.CDCOnBoot.cdc.build.cdc_on_boot=1
+rf210.menu.CDCOnBoot.default=Disabled
+rf210.menu.CDCOnBoot.default.build.cdc_on_boot=0
 
 ##############################################################
 
@@ -126,10 +126,10 @@ rf210_advance.menu.JTAGAdapter.bridge=ESP USB Bridge
 rf210_advance.menu.JTAGAdapter.bridge.build.openocdscript=esp32c3-bridge.cfg
 rf210_advance.menu.JTAGAdapter.bridge.build.copy_jtag_files=1
 
-rf210_advance.menu.CDCOnBoot.default=Disabled
-rf210_advance.menu.CDCOnBoot.default.build.cdc_on_boot=0
 rf210_advance.menu.CDCOnBoot.cdc=Enabled
 rf210_advance.menu.CDCOnBoot.cdc.build.cdc_on_boot=1
+rf210_advance.menu.CDCOnBoot.default=Disabled
+rf210_advance.menu.CDCOnBoot.default.build.cdc_on_boot=0
 
 rf210_advance.menu.PartitionScheme.default=Default 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)
 rf210_advance.menu.PartitionScheme.default.build.partitions=default
