@@ -8,11 +8,8 @@
 #define NUM_DIGITAL_PINS        22
 #define NUM_ANALOG_INPUTS       6
 
-static const uint8_t LED_BUILTIN = SOC_GPIO_PIN_COUNT+8;
+static const uint8_t LED_BUILTIN = 4;
 #define BUILTIN_LED  LED_BUILTIN // backward compatibility
-#define LED_BUILTIN LED_BUILTIN
-#define RGB_BUILTIN LED_BUILTIN
-#define RGB_BRIGHTNESS 64
 
 #define analogInputToDigitalPin(p)  (((p)<NUM_ANALOG_INPUTS)?(analogChannelToDigitalPin(p)):-1)
 #define digitalPinToInterrupt(p)    (((p)<NUM_DIGITAL_PINS)?(p):-1)
@@ -21,8 +18,8 @@ static const uint8_t LED_BUILTIN = SOC_GPIO_PIN_COUNT+8;
 static const uint8_t TX = 21;
 static const uint8_t RX = 20;
 
-static const uint8_t SDA = 8;
-static const uint8_t SCL = 9;
+static const uint8_t SDA = 5;
+static const uint8_t SCL = 6;
 
 static const uint8_t SS    = 7;
 static const uint8_t MOSI  = 6;
@@ -35,5 +32,9 @@ static const uint8_t A2 = 2;
 static const uint8_t A3 = 3;
 static const uint8_t A4 = 4;
 static const uint8_t A5 = 5;
+
+// Pins for GNSS Quectel
+static const uint8_t GPS_TX = 7;
+static const uint8_t GPS_RX = 3;
 
 #endif /* Pins_Arduino_h */
