@@ -60,7 +60,7 @@ rf210.build.cdc_on_boot=0
 rf210.build.f_cpu=160000000L
 rf210.build.flash_size=4MB
 rf210.build.flash_freq=80m
-rf210.build.flash_mode=qio
+rf210.build.flash_mode=dio
 rf210.build.boot=qio
 rf210.build.partitions=default
 rf210.build.defines=
@@ -68,7 +68,7 @@ rf210.build.defines=
 rf210.build.copy_jtag_files=0
 rf210.build.code_debug=0
 rf210.upload.speed=115200
-rf210.upload.erase_cmd=-e
+rf210.upload.erase_cmd=
 
 rf210.menu.CDCOnBoot.cdc=Enabled
 rf210.menu.CDCOnBoot.cdc.build.cdc_on_boot=1
