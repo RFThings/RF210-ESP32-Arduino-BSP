@@ -1,16 +1,16 @@
 name=RFThings ESP32 Boards
 version=2.0.6
 
-tools.xtensa-esp32-elf-gcc.path={runtime.platform.path}/tools/xtensa-esp32-elf
-tools.xtensa-esp32s2-elf-gcc.path={runtime.platform.path}/tools/xtensa-esp32s2-elf
-tools.xtensa-esp32s3-elf-gcc.path={runtime.platform.path}/tools/xtensa-esp32s3-elf
-tools.riscv32-esp-elf-gcc.path={runtime.platform.path}/tools/riscv32-esp-elf
+tools.xtensa-esp32-elf-gcc.path={runtime.tools.xtensa-esp32-elf-gcc.path}
+tools.xtensa-esp32s2-elf-gcc.path={runtime.tools.xtensa-esp32s2-elf-gcc.path}
+tools.xtensa-esp32s3-elf-gcc.path={runtime.tools.xtensa-esp32s3-elf-gcc.path}
+tools.riscv32-esp-elf-gcc.path={runtime.tools.riscv32-esp-elf-gcc.path}
 
-debug.server.openocd.path={runtime.platform.path}/tools/openocd-esp32/bin/openocd
-debug.server.openocd.scripts_dir={runtime.platform.path}/tools/openocd-esp32/share/openocd/scripts/
-debug.server.openocd.scripts_dir.windows={runtime.platform.path}\tools\openocd-esp32\share\openocd\scripts\
+debug.server.openocd.path={runtime.tools.openocd-esp32.path}/bin/openocd
+debug.server.openocd.scripts_dir={runtime.tools.openocd-esp32.path}/share/openocd/scripts/
+debug.server.openocd.scripts_dir.windows={runtime.tools.openocd-esp32.path}\share\openocd\scripts\
 
-tools.esptool_py.path={runtime.platform.path}/tools/esptool
+tools.esptool_py.path={runtime.tools.esptool_py.path}
 tools.esptool_py.cmd=esptool
 tools.esptool_py.cmd.linux=esptool.py
 tools.esptool_py.cmd.windows=esptool.exe
