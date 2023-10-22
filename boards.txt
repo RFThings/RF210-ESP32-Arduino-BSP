@@ -242,9 +242,3 @@ rf210_advance.menu.EraseFlash.all=Enabled
 rf210_advance.menu.EraseFlash.all.upload.erase_cmd=-e
 
 ##############################################################
-
-dummy.name=RFThings RF210
-dummy.hide=
-dummy.vid.0=0x1A86
-dummy.pid.0=0x7523
-dummy.build.board=ESP32C3_DEV
